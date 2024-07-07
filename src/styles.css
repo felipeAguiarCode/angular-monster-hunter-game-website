@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Source Serif 4";
+  src: url("../src/assets/fonts/SourceSerif4-VF.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("../src/assets/fonts/SourceSans3-VF.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ff-serif {
+  font-family: "Source Serif 4", serif;
+}

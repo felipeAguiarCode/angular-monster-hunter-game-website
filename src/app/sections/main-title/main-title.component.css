@@ -1,0 +1,147 @@
+.main-title {
+  position: relative;
+}
+
+/*=============================================================
+# Section: title
+===============================================================*/
+
+/**
+  mobile navigation
+---------------------------------------------------------------
+*/
+.title {
+  z-index: 3;
+  position: relative;
+  padding-top: 85vw;
+}
+
+.title-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+}
+
+.title-logo {
+  width: 90%;
+  margin: 0 auto;
+  user-select: none;
+}
+
+.title-lead {
+  text-align: center;
+  font-size: clamp(18px, 0.3rem, 28px);
+  margin-bottom: min(1.3rem, 30px);
+}
+
+.title-lead p {
+  color: #fff;
+  font-size: 19.6px;
+  font-weight: 700;
+  filter: drop-shadow(0 0 5px #288fd0) drop-shadow(0 0 5px #288fd0)
+    drop-shadow(0 0 5px #288fd0);
+  line-height: 1.5;
+  letter-spacing: 0.015rem;
+}
+
+.title-platform {
+  margin: auto;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0 5%;
+  margin-bottom: min(0.2rem, 20px);
+  filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 5px #fff);
+}
+
+.title-release {
+  width: fit-content;
+  margin: 0 auto min(0.4rem, 40px);
+  text-align: center;
+  padding: 0 2em;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../../assets/images/borders/bg-release-grad.png");
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: 95% auto;
+}
+
+.title-release::after,
+.title-release::before {
+  content: "";
+  width: 110%;
+  height: min(0.05rem, 5px);
+  margin-left: -5%;
+  display: block;
+  background-image: url(../../../assets/images/borders/deco-line-both-arrow-wht.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.title-release span {
+  display: block;
+  padding: 0.5em 1em;
+  letter-spacing: 0.1em;
+  font-size: min(3.34rem, 34px);
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
+}
+
+/**
+  desktop navigation
+---------------------------------------------------------------
+*/
+
+@media screen and (min-width: 769px) {
+  .title {
+    padding-top: min(0.4rem, 40px);
+    padding-bottom: min(0.4rem, 40px);
+    margin-bottom: 0;
+    width: min(100%, 2200px);
+  }
+}
+
+/*=============================================================
+# Section: New Character
+===============================================================*/
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s cubic-bezier(0.215, 0.61, 0.355, 1) 0.2s forwards;
+}
+
+@keyframes zoomUP {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.zoom-up {
+  animation: zoomUP 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s forwards;
+  animation-duration: 0.8s;
+  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation-delay: 0.4s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-name: zoomUP;
+  animation-timeline: auto;
+  animation-range-start: normal;
+  animation-range-end: normal;
+}
